@@ -1,0 +1,54 @@
+#customalert{
+    color: white;
+    display:none;
+    width:300px;
+    height:auto;
+    padding:15px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left:-159px;
+    margin-top:-19px;
+    border:#999 1px solid;
+    background: #283892;
+    z-index:9999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size:20px;
+ }
+ 
+ #contact-remove-sign{
+    display: inline-block;
+    float:right;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 21px;
+    width: 21px;
+    right: -15px;
+    top: -10px;
+    background: #d22c10;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    /*color: white;*/
+    font-stretch: ultra-expanded;
+    margin-left:10px;
+    margin-bottom:5px;
+ }
+ 
+ #contact-remove-sign::before, 
+ #contact-remove-sign::after {
+     position: absolute;
+     left: 9px;
+     margin-top: 4px;
+     content: ' ';
+     height: 12px;
+     width: 3px;
+     background-color: #fff;
+ }
+ 
+ #contact-remove-sign::before{transform: rotate(45deg);}
+ #contact-remove-sign::after{transform: rotate(-45deg);}
